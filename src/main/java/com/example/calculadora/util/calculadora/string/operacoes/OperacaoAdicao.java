@@ -1,8 +1,8 @@
 package com.example.calculadora.util.calculadora.string.operacoes;
 
-public class CalcularOperacaoSubtracao implements CalcularOperacaoStrategy {
+public class OperacaoAdicao implements OperacaoStrategy {
     @Override
     public Double calcular(Double valor1, Double valor2) {
-        return valor1 - valor2;
+        return valor1 + valor2;
     }
 }

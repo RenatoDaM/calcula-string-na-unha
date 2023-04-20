@@ -2,17 +2,16 @@ package com.example.calculadora.util.calculadora.string;
 
 import com.example.calculadora.util.calculadora.string.operacoes.*;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Calculadora {
-    Map<String, CalcularOperacaoStrategy> relacaoOperadorOperacao = new HashMap<>();
+    Map<String, OperacaoStrategy> relacaoOperadorOperacao = new HashMap<>();
 
     public Calculadora(){
 
     }
 
-    public Calculadora(String novoOperador, CalcularOperacaoStrategy novaOperacao) {
+    public Calculadora(String novoOperador, OperacaoStrategy novaOperacao) {
         relacaoOperadorOperacao.put(novoOperador, novaOperacao);
     }
 

@@ -1,13 +1,11 @@
 package com.example.calculadora.util.calculadora.string;
 
-import com.example.calculadora.util.calculadora.string.operacoes.CalcularOperacaoStrategy;
+import com.example.calculadora.util.calculadora.string.operacoes.OperacaoStrategy;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public enum OperacaoEnum implements CalcularOperacaoStrategy {
+public enum OperacaoEnum implements OperacaoStrategy {
 
     ADICAO("+") {
         @Override
