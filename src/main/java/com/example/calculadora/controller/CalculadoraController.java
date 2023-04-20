@@ -18,7 +18,6 @@ public class CalculadoraController implements CalculadoraOpenAPIImpl {
 
     @RequestMapping(value = "/calcular-dois-numeros", method = RequestMethod.GET)
     public ResponseEntity<Double> calcular(@RequestParam String equacao) throws Exception {
-        System.out.println(equacao);
-        return ResponseEntity.ok().body(calculadoraService.calcular(equacao));
+        return ResponseEntity.ok().body(calculadoraService.calcularEntreDoisNumeros(equacao));
     }
 }
