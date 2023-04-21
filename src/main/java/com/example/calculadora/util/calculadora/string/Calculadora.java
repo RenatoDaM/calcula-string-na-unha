@@ -50,7 +50,7 @@ public class Calculadora {
 
 
     public Double aplicarOperacao(Double valor1, String operador2, Double valor2) {
-        OperacaoEnum calcular = OperacaoEnum.informarOperadorParaCalcular(operador2);
+        EnumOperacao calcular = EnumOperacao.informarOperadorParaCalcular(operador2);
         if (calcular == null) throw new IllegalArgumentException("Operador inválido.");
         return calcular.calcular(valor1, valor2);
     }

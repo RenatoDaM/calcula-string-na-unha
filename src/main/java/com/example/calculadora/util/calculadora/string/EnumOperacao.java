@@ -5,7 +5,7 @@ import com.example.calculadora.util.calculadora.string.operacoes.OperacaoStrateg
 import java.util.HashMap;
 import java.util.Map;
 
-public enum OperacaoEnum implements OperacaoStrategy {
+public enum EnumOperacao implements OperacaoStrategy {
 
     ADICAO("+") {
         @Override
@@ -35,9 +35,9 @@ public enum OperacaoEnum implements OperacaoStrategy {
 
     String operador;
 
-    private static Map<String, OperacaoEnum> relacaoOperadorOperacao = new HashMap<>();
+    private static Map<String, EnumOperacao> relacaoOperadorOperacao = new HashMap<>();
 
-    OperacaoEnum(String operador) {
+    EnumOperacao(String operador) {
         this.operador = operador;
     }
 
@@ -52,8 +52,8 @@ public enum OperacaoEnum implements OperacaoStrategy {
         relacaoOperadorOperacao.put("/", DIVISAO);
     }
 
-    public static OperacaoEnum informarOperadorParaCalcular(String operador) {
-        OperacaoEnum operacao = relacaoOperadorOperacao.get(operador);
+    public static EnumOperacao informarOperadorParaCalcular(String operador) {
+        EnumOperacao operacao = relacaoOperadorOperacao.get(operador);
         if (operacao == null) {
             throw new IllegalArgumentException("Operador inválido: " + operador);
         }
