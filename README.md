@@ -1,4 +1,4 @@
-# calcula-string-na-unha
+# calcula-string-na-unha - WIP
 É uma API que recebe uma expressão em formato de String e a calcula retornando um Double. Tentei aplicar o Design Pattern Strategy.<br/>
 Obviamente já existem diversas bibliotecas mais completas que facilitariam, porém acabei me desafiando nisso.<br/>
 Por enquanto só é compatível com operação entre dois números.<br/>
